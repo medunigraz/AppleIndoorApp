@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352E25741F2F1B1B004DE14E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E25731F2F1B1B004DE14E /* NewsTableViewCell.swift */; };
+		352E25761F2F1D6E004DE14E /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E25751F2F1D6E004DE14E /* News.swift */; };
 		355B5EC11F260ABE007D536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EC01F260ABE007D536E /* AppDelegate.swift */; };
-		355B5EC31F260ABE007D536E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EC21F260ABE007D536E /* FirstViewController.swift */; };
-		355B5EC51F260ABE007D536E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EC41F260ABE007D536E /* SecondViewController.swift */; };
+		355B5EC51F260ABE007D536E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EC41F260ABE007D536E /* MapViewController.swift */; };
 		355B5EC81F260ABE007D536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B5EC61F260ABE007D536E /* Main.storyboard */; };
 		355B5ECA1F260ABE007D536E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355B5EC91F260ABE007D536E /* Assets.xcassets */; };
 		355B5ECD1F260ABE007D536E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B5ECB1F260ABE007D536E /* LaunchScreen.storyboard */; };
 		355B5ED81F260ABE007D536E /* MedCampusNaviWithExtrasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5ED71F260ABE007D536E /* MedCampusNaviWithExtrasTests.swift */; };
 		355B5EE31F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EE21F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift */; };
+		355B5EF11F2615EC007D536E /* JSInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF01F2615EC007D536E /* JSInterface.swift */; };
+		355B5EF31F263177007D536E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF21F263177007D536E /* Event.swift */; };
+		35D6BDE41F3078420040DE91 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDE31F3078420040DE91 /* NewsViewController.swift */; };
+		35D6BDEB1F30AE890040DE91 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */; };
+		35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */; };
+		35D6BDEF1F31A0020040DE91 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEE1F31A0020040DE91 /* HTTP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352E25731F2F1B1B004DE14E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		352E25751F2F1D6E004DE14E /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		355B5EBD1F260ABE007D536E /* MedCampusNaviWithExtras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedCampusNaviWithExtras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355B5EC01F260ABE007D536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		355B5EC21F260ABE007D536E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		355B5EC41F260ABE007D536E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		355B5EC41F260ABE007D536E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		355B5EC71F260ABE007D536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		355B5EC91F260ABE007D536E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355B5ECC1F260ABE007D536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		355B5EDE1F260ABE007D536E /* MedCampusNaviWithExtrasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedCampusNaviWithExtrasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		355B5EE21F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCampusNaviWithExtrasUITests.swift; sourceTree = "<group>"; };
 		355B5EE41F260ABE007D536E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		355B5EF01F2615EC007D536E /* JSInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSInterface.swift; sourceTree = "<group>"; };
+		355B5EF21F263177007D536E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		35D6BDE31F3078420040DE91 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		35D6BDEE1F31A0020040DE91 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352E25771F2F1E64004DE14E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				352E25751F2F1D6E004DE14E /* News.swift */,
+				355B5EF21F263177007D536E /* Event.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		352E25781F2F1E82004DE14E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35D6BDE71F30A9380040DE91 /* Map */,
+				35D6BDE61F30A92B0040DE91 /* Event */,
+				35D6BDE51F30A91B0040DE91 /* News */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		352E25791F2F1E9E004DE14E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				355B5EF01F2615EC007D536E /* JSInterface.swift */,
+				35D6BDEE1F31A0020040DE91 /* HTTP.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		352E257A1F2F26EE004DE14E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				355B5EC61F260ABE007D536E /* Main.storyboard */,
+				355B5ECB1F260ABE007D536E /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		355B5EB41F260ABE007D536E = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +150,12 @@
 		355B5EBF1F260ABE007D536E /* MedCampusNaviWithExtras */ = {
 			isa = PBXGroup;
 			children = (
-				355B5EC01F260ABE007D536E /* AppDelegate.swift */,
-				355B5EC21F260ABE007D536E /* FirstViewController.swift */,
-				355B5EC41F260ABE007D536E /* SecondViewController.swift */,
-				355B5EC61F260ABE007D536E /* Main.storyboard */,
+				352E257A1F2F26EE004DE14E /* Storyboards */,
+				352E25781F2F1E82004DE14E /* ViewController */,
+				352E25771F2F1E64004DE14E /* Models */,
+				352E25791F2F1E9E004DE14E /* Util */,
 				355B5EC91F260ABE007D536E /* Assets.xcassets */,
-				355B5ECB1F260ABE007D536E /* LaunchScreen.storyboard */,
+				355B5EC01F260ABE007D536E /* AppDelegate.swift */,
 				355B5ECE1F260ABE007D536E /* Info.plist */,
 			);
 			path = MedCampusNaviWithExtras;
@@ -126,6 +177,32 @@
 				355B5EE41F260ABE007D536E /* Info.plist */,
 			);
 			path = MedCampusNaviWithExtrasUITests;
+			sourceTree = "<group>";
+		};
+		35D6BDE51F30A91B0040DE91 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				352E25731F2F1B1B004DE14E /* NewsTableViewCell.swift */,
+				35D6BDE31F3078420040DE91 /* NewsViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		35D6BDE61F30A92B0040DE91 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */,
+				35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		35D6BDE71F30A9380040DE91 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				355B5EC41F260ABE007D536E /* MapViewController.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +273,7 @@
 				TargetAttributes = {
 					355B5EBC1F260ABE007D536E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 87HXM2W5TD;
+						DevelopmentTeam = A4T23767YU;
 						ProvisioningStyle = Automatic;
 					};
 					355B5ED21F260ABE007D536E = {
@@ -265,9 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355B5EC51F260ABE007D536E /* SecondViewController.swift in Sources */,
+				355B5EC51F260ABE007D536E /* MapViewController.swift in Sources */,
+				352E25741F2F1B1B004DE14E /* NewsTableViewCell.swift in Sources */,
+				352E25761F2F1D6E004DE14E /* News.swift in Sources */,
 				355B5EC11F260ABE007D536E /* AppDelegate.swift in Sources */,
-				355B5EC31F260ABE007D536E /* FirstViewController.swift in Sources */,
+				35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */,
+				35D6BDEF1F31A0020040DE91 /* HTTP.swift in Sources */,
+				355B5EF11F2615EC007D536E /* JSInterface.swift in Sources */,
+				35D6BDE41F3078420040DE91 /* NewsViewController.swift in Sources */,
+				355B5EF31F263177007D536E /* Event.swift in Sources */,
+				35D6BDEB1F30AE890040DE91 /* EventTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,8 +503,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 87HXM2W5TD;
+				DEVELOPMENT_TEAM = A4T23767YU;
 				INFOPLIST_FILE = MedCampusNaviWithExtras/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meduni.MedCampusNaviWithExtras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,8 +517,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 87HXM2W5TD;
+				DEVELOPMENT_TEAM = A4T23767YU;
 				INFOPLIST_FILE = MedCampusNaviWithExtras/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meduni.MedCampusNaviWithExtras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +604,7 @@
 				355B5EE91F260ABE007D536E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		355B5EEA1F260ABE007D536E /* Build configuration list for PBXNativeTarget "MedCampusNaviWithExtrasTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +613,7 @@
 				355B5EEC1F260ABE007D536E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		355B5EED1F260ABE007D536E /* Build configuration list for PBXNativeTarget "MedCampusNaviWithExtrasUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +622,7 @@
 				355B5EEF1F260ABE007D536E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
