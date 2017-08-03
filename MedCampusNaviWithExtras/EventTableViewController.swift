@@ -19,7 +19,7 @@ class EventTableViewController: UITableViewController {
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
             let resultArray = getJson["results"] as! Array<[String:Any]>
             for dict in resultArray {
-                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["description"]as! String, allday: (dict["allday"] != nil))
+                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil))
                 self.events += [eventObject]
             }
             self.tableView.reloadData()

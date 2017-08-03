@@ -19,6 +19,7 @@
 		355B5EF11F2615EC007D536E /* JSInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF01F2615EC007D536E /* JSInterface.swift */; };
 		355B5EF31F263177007D536E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF21F263177007D536E /* Event.swift */; };
 		35A4E5881F320B6300A9329D /* ImpressumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4E5871F320B6300A9329D /* ImpressumViewController.swift */; };
+		35A4E58A1F32FEF000A9329D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4E5891F32FEF000A9329D /* Util.swift */; };
 		35D6BDE41F3078420040DE91 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDE31F3078420040DE91 /* NewsViewController.swift */; };
 		35D6BDEB1F30AE890040DE91 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */; };
 		35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */; };
@@ -61,6 +62,7 @@
 		355B5EF01F2615EC007D536E /* JSInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSInterface.swift; sourceTree = "<group>"; };
 		355B5EF21F263177007D536E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		35A4E5871F320B6300A9329D /* ImpressumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressumViewController.swift; sourceTree = "<group>"; };
+		35A4E5891F32FEF000A9329D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		35D6BDE31F3078420040DE91 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				355B5EF01F2615EC007D536E /* JSInterface.swift */,
 				35D6BDEE1F31A0020040DE91 /* HTTP.swift */,
+				35A4E5891F32FEF000A9329D /* Util.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				355B5EC11F260ABE007D536E /* AppDelegate.swift in Sources */,
 				35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */,
 				35D6BDEF1F31A0020040DE91 /* HTTP.swift in Sources */,
+				35A4E58A1F32FEF000A9329D /* Util.swift in Sources */,
 				355B5EF11F2615EC007D536E /* JSInterface.swift in Sources */,
 				35D6BDE41F3078420040DE91 /* NewsViewController.swift in Sources */,
 				355B5EF31F263177007D536E /* Event.swift in Sources */,

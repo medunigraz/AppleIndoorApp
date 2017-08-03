@@ -26,7 +26,7 @@ class NewsViewController: UITableViewController {
             }
             
             for dict in resultArray {
-                let newsObject = News(title: dict["title"] as! String, desc: dict["body"] as! String)
+                let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String,date: dict["datetime"] as! String)
                 self.news += [newsObject]
             }
             self.tableView.reloadData()
@@ -67,6 +67,7 @@ class NewsViewController: UITableViewController {
         
         cell.title.text=news.title
         cell.desc.text=news.desc
+        cell.date.text=news.date
         
         return cell
     }
@@ -84,7 +85,7 @@ class NewsViewController: UITableViewController {
                         self.nextURL = "END"
                     }
                     for dict in resultArray {
-                        let newsObject = News(title: dict["title"] as! String, desc: dict["body"] as! String)
+                        let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, date: dict["datetime"] as! String)
                         self.news += [newsObject]
                     }
                     self.tableView.reloadData()
