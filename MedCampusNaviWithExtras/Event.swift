@@ -16,14 +16,16 @@ struct Event{
     var title:String
     var description:String
     var url:URL
+    var state:Bool
     
-    init(start:String, end:String, title:String, desc:String,allday:Bool,url:URL){
+    init(start:String, end:String, title:String, desc:String,allday:Bool,url:URL,state:Bool){
         self.start=start
         self.end=end
         self.title=title
         self.description=desc
         self.allday=allday
         self.url=url
+        self.state=state
         
     }
     

@@ -24,6 +24,6 @@ class News {
         self.date=Util().convertDate(date: date)
     }
 
-    
+        
 
 }

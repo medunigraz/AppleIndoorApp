@@ -11,6 +11,8 @@ import UIKit
 class EventTableViewController: UITableViewController {
 
     var events = [Event]()
+    var url = String()
+    var state = Bool()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,15 @@ class EventTableViewController: UITableViewController {
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
             let resultArray = getJson["results"] as! Array<[String:Any]>
             for dict in resultArray {
-                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: URL(string: "https://api.medunigraz.at/")!)
+                if (dict["url"] as? String) != "" {
+                    self.url = dict["url"] as! String
+                    self.state=true
+                }else{
+                    self.url = "www.DISABLE.com"
+                    self.state = false
+                }
+                
+                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: URL(string: self.url)!,state: self.state)
                 self.events += [eventObject]
             }
             self.tableView.reloadData()
@@ -52,6 +62,10 @@ class EventTableViewController: UITableViewController {
         }
         // Configure the cell...
         let event = self.events[indexPath.row]
+        if event.state == false {
+           cell.selectionStyle=UITableViewCellSelectionStyle.none
+           cell.isUserInteractionEnabled=false
+        }
         cell.time.text=event.getTimeString()
         cell.title.text=event.title
         cell.eventdesc.text=event.description

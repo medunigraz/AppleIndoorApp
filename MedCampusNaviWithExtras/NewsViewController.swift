@@ -13,6 +13,7 @@ class NewsViewController: UITableViewController {
     //MARK: Properties
     var news = [News]()
     var nextURL = String()
+    var url = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,13 @@ class NewsViewController: UITableViewController {
             }
             
             for dict in resultArray {
-                let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: "https://api.medunigraz.at/")!,date: dict["datetime"] as! String)
+                if (dict["url"] as? String) != nil {
+                    print("NIL")
+                    self.url = dict["url"] as! String
+                }else{
+                    self.url = "www.noSite.com"
+                }
+                let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: self.url)!,date: dict["datetime"] as! String)
                 self.news += [newsObject]
             }
             self.tableView.reloadData()
