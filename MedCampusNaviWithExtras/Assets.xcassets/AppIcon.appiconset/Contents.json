@@ -33,13 +33,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "icon_ohnerand_120.png",
+      "filename" : "uni_icon_ios_120.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "icon_ohnerand_180.png",
+      "filename" : "uni_icon_ios_180.png",
       "scale" : "3x"
     }
   ],

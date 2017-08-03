@@ -18,6 +18,7 @@
 		355B5EE31F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EE21F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift */; };
 		355B5EF11F2615EC007D536E /* JSInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF01F2615EC007D536E /* JSInterface.swift */; };
 		355B5EF31F263177007D536E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF21F263177007D536E /* Event.swift */; };
+		35A4E5881F320B6300A9329D /* ImpressumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4E5871F320B6300A9329D /* ImpressumViewController.swift */; };
 		35D6BDE41F3078420040DE91 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDE31F3078420040DE91 /* NewsViewController.swift */; };
 		35D6BDEB1F30AE890040DE91 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */; };
 		35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */; };
@@ -59,6 +60,7 @@
 		355B5EE41F260ABE007D536E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355B5EF01F2615EC007D536E /* JSInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSInterface.swift; sourceTree = "<group>"; };
 		355B5EF21F263177007D536E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		35A4E5871F320B6300A9329D /* ImpressumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressumViewController.swift; sourceTree = "<group>"; };
 		35D6BDE31F3078420040DE91 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				35D6BDE71F30A9380040DE91 /* Map */,
 				35D6BDE61F30A92B0040DE91 /* Event */,
 				35D6BDE51F30A91B0040DE91 /* News */,
+				35A4E5871F320B6300A9329D /* ImpressumViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				355B5EC51F260ABE007D536E /* MapViewController.swift in Sources */,
 				352E25741F2F1B1B004DE14E /* NewsTableViewCell.swift in Sources */,
 				352E25761F2F1D6E004DE14E /* News.swift in Sources */,
+				35A4E5881F320B6300A9329D /* ImpressumViewController.swift in Sources */,
 				355B5EC11F260ABE007D536E /* AppDelegate.swift in Sources */,
 				35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */,
 				35D6BDEF1F31A0020040DE91 /* HTTP.swift in Sources */,
