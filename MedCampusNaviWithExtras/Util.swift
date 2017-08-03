@@ -2,7 +2,7 @@
 //  Util.swift
 //  MedCampusNaviWithExtras
 //
-//  Created by gze on 03.08.17.
+//  Created by o_rossmanf on 03.08.17.
 //  Copyright © 2017 mug. All rights reserved.
 //
 
@@ -14,4 +14,5 @@ class Util{
         let index: Range<String.Index> = date.range(of: "T")!
         return date.substring(to: index.lowerBound)
     }
+    
 }

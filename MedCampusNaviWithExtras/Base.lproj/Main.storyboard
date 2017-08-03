@@ -161,13 +161,200 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fabian ist cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYf-9i-hXu">
-                                <rect key="frame" x="77" y="272" width="167" height="24"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT2-3h-7FC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Impressum">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50679385662078857" green="0.73924601078033447" blue="0.15583953261375427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="30" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Medieninhaberin, Herausgeberin, inhaltliche und redaktionelle Verantwortung
+Medizinische Universität Graz
+Auenbruggerplatz 2
+8036 Graz
+rektor(at)medunigraz.at
+www.medunigraz.at
+Rechtsform und Information
+Juristische Person öffentlichen Rechts gemäß § 4 Universitätsgesetz 2002 (UG 2002), BGBl. I Nr. 120/2002 idgF.
+DVR: 210 9494, UID: ATU 575 111 79</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Arial-ItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Design und Umsetzung">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Praktikanten der OE für </string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Informationstechnologie der Medizinischen Universität Graz">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Technischer Support">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Die technische Betreuung der App erfolgt durch die OE Informationstechnologie der Medizinischen Universität Graz. In Problemfällen sowie bei Anfragen bzw. Anregungen technischer Art richten Sie Ihre e-Mail an it-serviceline(at)medunigraz.at.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Copyright">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+© Das Copyright liegt bei der Medizinischen Universität Graz bzw. den jeweiligen AutorInnen der Subseiten.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Haftung">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+Sämtliche Texte auf der App der Medizinischen Universität Graz wurden sorgfältig geprüft. Dessen ungeachtet kann keine Garantie für die Richtigkeit, Vollständigkeit und Aktualität der Angaben bzw. Inhalte, weder selbst formulierte noch zitierte, noch für allfällige Schäden, die aus der Verwendung der Informationen resultieren könnten, übernommen werden. Eine Haftung der Medizinischen Universität Graz wird daher ausgeschlossen.
+Die Medizinische Universität Graz behält es sich vor, die Inhalte Ihrer Webseite jederzeit zu ändern, zu ergänzen, ganz oder teilweise zu löschen. Für allenfalls daraus resultierende Konsequenzen übernimmt die Medizinische Universität Graz keinerlei Verantwortung.
+Die Links zu externen Webseiten wurden sorgfältig ausgewählt. Da die Medizinische Universität Graz keinerlei Kontrolle über und auch keinen Einfluss auf die Inhalte dieser externen Webseiten hat, übernimmt die Medizinische Universität Graz für den Inhalt von solchen verlinkten Webseiten sowie für deren Aktualität, Richtigkeit, Vollständigkeit sowie Gesetzeskonformität keine Verantwortung.
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Aufsichtsbehörde der Medizinischen Universität Graz">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Bundesministerium für Wissenschaft, Forschung und Wirtschaft (bmwfw)
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Offenlegung gemäß § 25 Mediengesetz, BGBl. I Nr. 214/1981 idgF.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50679385662078857" green="0.73924601078033447" blue="0.15583953261375427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="ArialMT"/>
+                                            <font key="NSOriginalFont" size="24" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Medieninhaberin">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Medizinische Universität Graz, Auenbruggerplatz 2, A-8036 Graz
+Unternehmensgegenstand: gemäß Aufgabendefinition in § 3 UG 2002
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Grundlegende Richtung">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dient einerseits der Information der Öffentlichkeit über Belange der Medizinischen Universität Graz in den Bereichen Forschung und Lehre und Patientenversorgung, andererseits Mitteilungen der Medizinischen Universität Graz zu Fragen der Organisation und Verwaltung.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -201,7 +388,7 @@
         <scene sceneID="s4h-yE-HAE">
             <objects>
                 <tableViewController title="News" id="6JY-IF-XLW" customClass="NewsViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="VZl-Qh-Vmg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="VZl-Qh-Vmg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,7 +450,7 @@
         <scene sceneID="hD6-0f-YL0">
             <objects>
                 <tableViewController title="Events" id="xeq-Yz-3Dc" customClass="EventTableViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="c2d-ac-uBu">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="c2d-ac-uBu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -273,7 +460,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MF9-bd-BUX" id="Pne-y7-XwP">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYz-7j-y96">

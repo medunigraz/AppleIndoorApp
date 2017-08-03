@@ -2,7 +2,7 @@
 //  EventTableViewController.swift
 //  MedCampusNaviWithExtras
 //
-//  Created by gze on 01.08.17.
+//  Created by o_rossmanf on 01.08.17.
 //  Copyright © 2017 mug. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ class EventTableViewController: UITableViewController {
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
             let resultArray = getJson["results"] as! Array<[String:Any]>
             for dict in resultArray {
-                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil))
+                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: URL(string: "https://api.medunigraz.at/")!)
                 self.events += [eventObject]
             }
             self.tableView.reloadData()
@@ -48,7 +48,7 @@ class EventTableViewController: UITableViewController {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "eventCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+            fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
         // Configure the cell...
         let event = self.events[indexPath.row]
@@ -58,8 +58,11 @@ class EventTableViewController: UITableViewController {
         
         return cell
     }
-    
-
+    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UIApplication.shared.open(events[indexPath.row].url, options: [:])
+    }
+ */
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

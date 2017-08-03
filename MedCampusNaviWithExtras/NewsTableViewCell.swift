@@ -2,7 +2,7 @@
 //  NewsTableViewCell.swift
 //  MedCampusNaviWithExtras
 //
-//  Created by gze on 31.07.17.
+//  Created by o_rossmanf on 31.07.17.
 //  Copyright © 2017 mug. All rights reserved.
 //
 
@@ -26,5 +26,6 @@ class NewsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
 }

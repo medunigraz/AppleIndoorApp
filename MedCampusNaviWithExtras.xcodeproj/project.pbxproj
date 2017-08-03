@@ -109,7 +109,7 @@
 				35D6BDE71F30A9380040DE91 /* Map */,
 				35D6BDE61F30A92B0040DE91 /* Event */,
 				35D6BDE51F30A91B0040DE91 /* News */,
-				35A4E5871F320B6300A9329D /* ImpressumViewController.swift */,
+				35A4E58B1F3309C700A9329D /* AboutUs */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -183,6 +183,14 @@
 				355B5EE41F260ABE007D536E /* Info.plist */,
 			);
 			path = MedCampusNaviWithExtrasUITests;
+			sourceTree = "<group>";
+		};
+		35A4E58B1F3309C700A9329D /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				35A4E5871F320B6300A9329D /* ImpressumViewController.swift */,
+			);
+			name = AboutUs;
 			sourceTree = "<group>";
 		};
 		35D6BDE51F30A91B0040DE91 /* News */ = {

@@ -2,7 +2,7 @@
 //  Event.swift
 //  MedCampusNaviWithExtras
 //
-//  Created by gze on 24.07.17.
+//  Created by o_rossmanf on 24.07.17.
 //  Copyright © 2017 mug. All rights reserved.
 //
 
@@ -15,13 +15,16 @@ struct Event{
     var allday:Bool
     var title:String
     var description:String
+    var url:URL
     
-    init(start:String, end:String, title:String, desc:String,allday:Bool){
+    init(start:String, end:String, title:String, desc:String,allday:Bool,url:URL){
         self.start=start
         self.end=end
         self.title=title
         self.description=desc
         self.allday=allday
+        self.url=url
+        
     }
     
     func getTimeString() -> String {

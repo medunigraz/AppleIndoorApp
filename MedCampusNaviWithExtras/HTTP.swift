@@ -2,7 +2,7 @@
 //  HTTP.swift
 //  MedCampusNaviWithExtras
 //
-//  Created by gze on 02.08.17.
+//  Created by o_rossmanf on 02.08.17.
 //  Copyright © 2017 mug. All rights reserved.
 //
 

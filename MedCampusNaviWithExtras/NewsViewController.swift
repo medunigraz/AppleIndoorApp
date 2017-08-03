@@ -2,7 +2,7 @@
 //  NewsViewController.swift
 //  MedCampusNaviWithExtras
 //
-//  Created by gze on 01.08.17.
+//  Created by o_rossmanf on 01.08.17.
 //  Copyright © 2017 mug. All rights reserved.
 //
 
@@ -26,7 +26,7 @@ class NewsViewController: UITableViewController {
             }
             
             for dict in resultArray {
-                let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String,date: dict["datetime"] as! String)
+                let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: "https://api.medunigraz.at/")!,date: dict["datetime"] as! String)
                 self.news += [newsObject]
             }
             self.tableView.reloadData()
@@ -85,7 +85,7 @@ class NewsViewController: UITableViewController {
                         self.nextURL = "END"
                     }
                     for dict in resultArray {
-                        let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, date: dict["datetime"] as! String)
+                        let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: "https://api.medunigraz.at/")!, date: dict["datetime"] as! String)
                         self.news += [newsObject]
                     }
                     self.tableView.reloadData()
@@ -95,8 +95,11 @@ class NewsViewController: UITableViewController {
             }
         }
     }
- 
-
+/*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UIApplication.shared.open(news[indexPath.row].url, options: [:])
+    }
+*/
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
