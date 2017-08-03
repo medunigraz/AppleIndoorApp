@@ -95,11 +95,11 @@ class NewsViewController: UITableViewController {
             }
         }
     }
-/*
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UIApplication.shared.open(news[indexPath.row].url, options: [:])
     }
-*/
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
