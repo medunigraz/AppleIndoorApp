@@ -14,7 +14,7 @@ import JavaScriptCore
 var JSInterface:cJSInterface!
 
 class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDelegate ,CBCentralManagerDelegate {
-
+    
     
     
     var centralManager:CBCentralManager!
@@ -26,6 +26,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         
         //Init Central Blueooth Mgr
         centralManager = CBCentralManager(delegate: self,queue: nil)
+        
         //Webview
         containerView.delegate = self
         let url = URL(string: "https://map.medunigraz.at")
@@ -90,8 +91,8 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         
         
     }
-
-
-
+    
+    
+    
 }
 

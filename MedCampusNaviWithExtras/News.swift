@@ -23,7 +23,7 @@ class News {
         self.url=url
         self.date=Util().convertDate(date: date)
     }
-
-        
-
+    
+    
+    
 }

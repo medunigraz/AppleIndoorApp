@@ -42,5 +42,5 @@ struct Event{
         }
         return start.substring(to: index.lowerBound) //start.substring(with: start.range(of: "T")!)
     }
-        
+    
 }
