@@ -74,6 +74,8 @@ class NewsViewController: UITableViewController {
         // Configure the cell...
         let news = self.news[indexPath.row]
         
+        cell.selectionStyle=UITableViewCellSelectionStyle.none
+        cell.isUserInteractionEnabled=false
         cell.title.text=news.title
         cell.desc.text=news.desc
         cell.date.text=news.date

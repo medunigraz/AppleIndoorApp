@@ -11,9 +11,7 @@ import Foundation
 class Util{
     //Converts Dates from Api
     func convertDate(date: String) ->String {
-        print("date lappen")
         let index: Range<String.Index> = date.range(of: "T")!
-        print("datelappen geht")
         return date.substring(to: index.lowerBound)
     }
     
