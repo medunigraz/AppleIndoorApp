@@ -29,7 +29,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         
         //Webview
         containerView.delegate = self
-        let url = URL(string: "https://map.medunigraz.at")
+        let url = URL(string: "https://map.medunigraz.at/map-dev")
         let req = URLRequest(url: url!)
         containerView.loadRequest(req)
         

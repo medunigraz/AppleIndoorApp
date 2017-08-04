@@ -7,13 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class HTTP{
-    func get(urlStr:String,completionHandler: @escaping (_ result: [String:Any]) -> Void){
-        
+    func get(urlStr:String,completionHandler: @escaping (_ result: [String:Any]) -> Void) {
         let task = URLSession.shared.dataTask(with: URL(string: urlStr)!){ (data, response, error) in
-            let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
-            completionHandler(json!)
+            if error != nil {
+                
+            }else{
+                let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
+                completionHandler(json!)
+            }
         }
         task.resume()
     }

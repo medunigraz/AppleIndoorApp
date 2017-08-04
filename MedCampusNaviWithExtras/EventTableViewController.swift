@@ -16,23 +16,23 @@ class EventTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let httpad = HTTP()
+        print("Start of .get")
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
-            let resultArray = getJson["results"] as! Array<[String:Any]>
-            for dict in resultArray {
-                if (dict["url"] as? String) != "" {
-                    self.url = dict["url"] as! String
-                    self.state=true
-                }else{
-                    self.url = "www.DISABLE.com"
-                    self.state = false
+                let resultArray = getJson["results"] as! Array<[String:Any]>
+                for dict in resultArray {
+                    if (dict["url"] as? String) != "" {
+                        self.url = dict["url"] as! String
+                        self.state=true
+                    }else{
+                        self.url = "www.DISABLE.com"
+                        self.state = false
+                    }
+                    
+                    let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: URL(string: self.url)!,state: self.state)
+                    self.events += [eventObject]
                 }
-                
-                let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: URL(string: self.url)!,state: self.state)
-                self.events += [eventObject]
-            }
-            self.tableView.reloadData()
+                self.tableView.reloadData()
         }
     }
     
@@ -57,6 +57,7 @@ class EventTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "eventCell"
+        print("Cell init")
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
             fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
@@ -74,6 +75,7 @@ class EventTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("lappen")
         UIApplication.shared.open(events[indexPath.row].url, options: [:])
     }
     

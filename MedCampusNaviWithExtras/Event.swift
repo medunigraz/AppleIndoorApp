@@ -30,11 +30,11 @@ struct Event{
     }
     
     func getTimeString() -> String {
+        print("getTimeString")
         var timeString = String()
         let index: Range<String.Index> = start.range(of: "T")!
         let index2: Range<String.Index> = end.range(of: "T")!
         if allday == false{
-            
             timeString += start.substring(to: index.lowerBound)
             timeString += "-"
             timeString += end.substring(to: index2.lowerBound)

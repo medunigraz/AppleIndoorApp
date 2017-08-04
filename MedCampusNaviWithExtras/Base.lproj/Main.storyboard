@@ -16,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Ca-VC-Qn1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.50660914180000005" green="0.74309366939999999" blue="0.15571674699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44134190680000002" green="0.70438712839999995" blue="0.11924209450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                         <sections>
                             <tableViewSection id="xlP-KI-eEZ">
@@ -46,10 +46,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="svg2pdf.htm-2" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-qO-PgC">
-                                                    <rect key="frame" x="8" y="4" width="39" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgC-Lm-Qik">
                                                     <rect key="frame" x="55" y="11" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,6 +53,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-qO-PgC">
+                                                    <rect key="frame" x="8" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -70,10 +70,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="svg2pdf.htm-4" translatesAutoresizingMaskIntoConstraints="NO" id="1rk-hu-qvN">
-                                                    <rect key="frame" x="8" y="4" width="39" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-5h-Nka">
                                                     <rect key="frame" x="55" y="11" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,6 +77,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news_world" translatesAutoresizingMaskIntoConstraints="NO" id="1rk-hu-qvN">
+                                                    <rect key="frame" x="8" y="5" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -94,10 +94,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="svg2pdf.htm-3" translatesAutoresizingMaskIntoConstraints="NO" id="8kS-Vg-sqB">
-                                                    <rect key="frame" x="8" y="4" width="39" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiY-oy-RqA">
                                                     <rect key="frame" x="55" y="11" width="238" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,6 +101,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="8kS-Vg-sqB">
+                                                    <rect key="frame" x="8" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -123,12 +123,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Impressum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut8-jC-vIB">
-                                                    <rect key="frame" x="51" y="11" width="228" height="21"/>
+                                                    <rect key="frame" x="55" y="12" width="228" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="impressum" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-eo-f1a">
+                                                    <rect key="frame" x="8" y="5" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -168,7 +172,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Impressum">
                                         <attributes>
-                                            <color key="NSColor" red="0.50679385662078857" green="0.73924601078033447" blue="0.15583953261375427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.44134190678596497" green="0.7043871283531189" blue="0.11924209445714951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="30" name="Arial-BoldMT"/>
                                             <font key="NSOriginalFont" size="30" name="Arial-BoldMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -304,7 +308,7 @@ Bundesministerium für Wissenschaft, Forschung und Wirtschaft (bmwfw)
                                     </fragment>
                                     <fragment content="Offenlegung gemäß § 25 Mediengesetz, BGBl. I Nr. 214/1981 idgF.">
                                         <attributes>
-                                            <color key="NSColor" red="0.50679385662078857" green="0.73924601078033447" blue="0.15583953261375427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.44134190678596497" green="0.7043871283531189" blue="0.11924209445714951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="24" name="ArialMT"/>
                                             <font key="NSOriginalFont" size="24" name="ArialMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -370,7 +374,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E7q-zz-6Wv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.50660914180000005" green="0.74309366939999999" blue="0.15571674699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44134190680000002" green="0.70438712839999995" blue="0.11924209450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cpO-ID-Mnc">
                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>
@@ -405,7 +409,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                                             <rect key="frame" x="8" y="4" width="304" height="33"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                            <color key="textColor" red="0.50660914180000005" green="0.74309366939999999" blue="0.15571674699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.44134190678596497" green="0.7043871283531189" blue="0.11924209445714951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="headTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guC-Bf-HBg">
@@ -467,7 +471,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                                             <rect key="frame" x="8" y="0.0" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                            <color key="textColor" red="0.50660914182662964" green="0.74309366941452026" blue="0.15571674704551697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.44134190680000002" green="0.70438712839999995" blue="0.11924209450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUj-sl-eUF">
@@ -507,7 +511,6 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
         <!--Map-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -530,12 +533,17 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                         <outlet property="containerView" destination="o7T-IR-Rzp" id="HNZ-P0-BUZ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1020" y="1045.7746478873239"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo-MED-CAMPUS" width="1500" height="288"/>
+        <image name="calendar" width="299" height="299"/>
+        <image name="impressum" width="300" height="300"/>
+        <image name="map" width="300" height="300"/>
+        <image name="news_world" width="299" height="299"/>
         <image name="svg2pdf.htm-2" width="30" height="30"/>
         <image name="svg2pdf.htm-3" width="30" height="30"/>
         <image name="svg2pdf.htm-4" width="30" height="30"/>

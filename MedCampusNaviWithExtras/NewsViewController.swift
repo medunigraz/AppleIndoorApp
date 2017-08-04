@@ -35,9 +35,11 @@ class NewsViewController: UITableViewController {
                 }
                 let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: self.url)!,date: dict["datetime"] as! String)
                 self.news += [newsObject]
+ 
             }
             self.tableView.reloadData()
         }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -85,6 +87,9 @@ class NewsViewController: UITableViewController {
             if self.nextURL != "END" {
                 let httpad = HTTP()
                 httpad.get(urlStr:self.nextURL){ getJson in
+                    if getJson["count"] == nil{
+                        _ = self.navigationController?.popToRootViewController(animated: true)
+                    }
                     let resultArray = getJson["results"] as! Array<[String:Any]>
                     if (getJson["next"] as? String) != nil {
                         self.nextURL = getJson["next"] as! String
