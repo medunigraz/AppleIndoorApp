@@ -30,7 +30,6 @@ struct Event{
     }
     
     func getTimeString() -> String {
-        print("getTimeString")
         var timeString = String()
         let index: Range<String.Index> = start.range(of: "T")!
         let index2: Range<String.Index> = end.range(of: "T")!
