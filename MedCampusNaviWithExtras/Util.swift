@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//Util Class
 class Util{
     //Converts Dates from Api
     func convertDate(date: String) ->String {

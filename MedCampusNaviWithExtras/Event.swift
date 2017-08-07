@@ -8,8 +8,8 @@
 
 import Foundation
 
-
-struct Event{
+class Event{
+    //MARK: Properties
     var start:String
     var end:String
     var allday:Bool
@@ -18,6 +18,7 @@ struct Event{
     var url:URL
     var state:Bool
     
+    //MARK: Initialization
     init(start:String, end:String, title:String, desc:String,allday:Bool,url:URL,state:Bool){
         self.start=start
         self.end=end
@@ -29,6 +30,7 @@ struct Event{
         
     }
     
+    //converting the time to a valid String
     func getTimeString() -> String {
         var timeString = String()
         let index: Range<String.Index> = start.range(of: "T")!
@@ -39,7 +41,7 @@ struct Event{
             timeString += end.substring(to: index2.lowerBound)
             return timeString
         }
-        return start.substring(to: index.lowerBound) //start.substring(with: start.range(of: "T")!)
+        return start.substring(to: index.lowerBound)
     }
     
 }

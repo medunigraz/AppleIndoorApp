@@ -10,29 +10,38 @@ import UIKit
 
 class NewsViewController: UITableViewController {
     
-    //MARK: Properties
+    //Variables for adding cells to the table view
     var news = [News]()
     var nextURL = String()
     var url = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //HTTPAdapter init
         let httpad = HTTP()
+        //Get Request for the data
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/news/?format=json"){ getJson in
+            //Getting the event Data as an Array of dictionaries
             let resultArray = getJson["results"] as! Array<[String:Any]>
+            //Getting the URL for the next site
+            //"END" --> no next site
             if (getJson["next"] as? String) != nil {
                 self.nextURL = getJson["next"] as! String
             }else{
                 self.nextURL = "END"
             }
-            
+            //Loop for processing the data
             for dict in resultArray {
+                //Disable Selection and Indicator if there is no URL
                 if (dict["url"] as? String) != nil {
                     self.url = dict["url"] as! String
                 }else{
-                    self.url = "www.noSite.com"
+                    //Creating an Dummy URL
+                    self.url = "www.foo.com"
                 }
+                //Init of Model
                 let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: self.url)!,date: dict["datetime"] as! String)
+                //add the Model to the table View
                 self.news += [newsObject]
  
             }
@@ -54,52 +63,71 @@ class NewsViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        // return the number of sections
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        // return the number of rows
         return news.count
     }
     
-    
+    //execution on tableView.reloadData() call
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "NewsCell"
+        //Creating the tableView with the given identifier
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? NewsTableViewCell  else {
+            //Error occurs if the identifier is not existing
             fatalError("The dequeued cell is not an instance of MealTableViewCell.")
         }
         // Configure the cell...
         let news = self.news[indexPath.row]
-        
+        //Disabled, because no URLs are available at this time 07.08.2017
         cell.selectionStyle=UITableViewCellSelectionStyle.none
         cell.accessoryType=UITableViewCellAccessoryType.none
         cell.isUserInteractionEnabled=false
+        
+        //Setting the cell attributes
         cell.title.text=news.title
         cell.desc.text=news.desc
         cell.date.text=news.date
         
+        //Returning the Cell to the View
         return cell
     }
     
+    //View Update at the end of the site
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell,forRowAt indexPath: IndexPath) {
         let lastElement = news.count - 1
+        //if the user hits the bottom of the view the update is executed
         if indexPath.row == lastElement {
+            //Update only works with valid URL
             if self.nextURL != "END" {
+                //Init of HTTPAdapter
                 let httpad = HTTP()
+                //HTTP get
                 httpad.get(urlStr:self.nextURL){ getJson in
-                    if getJson["count"] == nil{
-                        _ = self.navigationController?.popToRootViewController(animated: true)
-                    }
                     let resultArray = getJson["results"] as! Array<[String:Any]>
+                    //Getting the URL for the next site
+                    //"END" --> no next site
                     if (getJson["next"] as? String) != nil {
                         self.nextURL = getJson["next"] as! String
                     }else{
                         self.nextURL = "END"
                     }
+                    //Loop for processing the data
                     for dict in resultArray {
+                        //Disable Selection and Indicator if there is no URL
+                        if (dict["url"] as? String) != nil {
+                            self.url = dict["url"] as! String
+                        }else{
+                            //Creating an Dummy URL
+                            self.url = "www.foo.com"
+                        }
+                        //Init of Model
                         let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: "https://api.medunigraz.at/")!, date: dict["datetime"] as! String)
+                        //Add model to View
                         self.news += [newsObject]
                     }
                     self.tableView.reloadData()
@@ -110,53 +138,10 @@ class NewsViewController: UITableViewController {
         }
     }
     
+    //Happens if the user touches a cell with a valid cell with an URL
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UIApplication.shared.open(news[indexPath.row].url, options: [:])
     }
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     super.prepare(for: segue, sender: sender)
-     
-     }
-     */
+
     
 }

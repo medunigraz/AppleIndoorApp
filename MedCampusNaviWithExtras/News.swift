@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//Model for the News Controller
 class News {
     //MARK: Properties
     var title: String

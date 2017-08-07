@@ -10,8 +10,7 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
     
-    //MARK: Properties
-    
+    //Outlets
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var desc: UILabel!
     @IBOutlet weak var date: UILabel!

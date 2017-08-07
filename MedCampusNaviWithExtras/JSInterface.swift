@@ -10,6 +10,7 @@ import Foundation
 import CoreBluetooth
 import JavaScriptCore
 
+//JSInterface/Protocoll --> written Object-C
 @objc protocol JSInterfaceProtocol : JSExport{
     
     func checkdevice() -> Int
@@ -17,17 +18,17 @@ import JavaScriptCore
     func stopscan() -> Void
 }
 
-
+//JSInterface Class
 @objc class cJSInterface:NSObject,JSInterfaceProtocol{
-    let timerScanInterval: TimeInterval=2.0
-    let timerPauseInterval: TimeInterval=10.0
-    
+   
+    //CBCentralManager
     var centralManager:CBCentralManager!
     
+    //Init
     init(centralMgr: CBCentralManager){
         centralManager=centralMgr
     }
-    
+    //Functions for javascript
     func stopscan() {
         centralManager.stopScan()
     }

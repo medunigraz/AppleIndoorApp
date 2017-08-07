@@ -94,7 +94,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="8rJ-Kc-sve" kind="show" id="VQb-ew-yIK"/>
+                                            <segue destination="iei-wf-xpY" kind="show" id="WHz-cb-dzz"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -351,12 +351,41 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYS-rf-nJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.5" y="1180.9859154929577"/>
+            <point key="canvasLocation" x="15" y="1129"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="yka-JG-nDR">
+            <objects>
+                <viewController title="Map" id="iei-wf-xpY" customClass="SecondViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5xi-wv-fxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="2qf-7b-tat"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gha-K7-2M4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6k-F5-YFk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="e6k-F5-YFk" id="YWX-DP-3hn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWR-cw-rST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="1110.2112676056338"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QJM-KI-WW3">
             <objects>
-                <navigationController hidesBarsWhenKeyboardAppears="YES" id="E4v-9J-821" sceneMemberID="viewController">
+                <navigationController id="E4v-9J-821" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="E7q-zz-6Wv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -372,7 +401,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67f-zp-2jZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-949" y="344"/>
+            <point key="canvasLocation" x="-716" y="343"/>
         </scene>
         <!--News-->
         <scene sceneID="s4h-yE-HAE">
@@ -392,7 +421,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="headTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guC-Bf-HBg">
-                                            <rect key="frame" x="8" y="29" width="279" height="88"/>
+                                            <rect key="frame" x="8" y="32" width="279" height="86"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <nil key="textColor"/>
@@ -434,7 +463,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7P-Pd-EuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="293.66197183098592"/>
+            <point key="canvasLocation" x="875.625" y="367.6056338028169"/>
         </scene>
         <!--Events-->
         <scene sceneID="hD6-0f-YL0">
@@ -468,7 +497,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DU-Ut-zPO">
-                                            <rect key="frame" x="8" y="22" width="279" height="68"/>
+                                            <rect key="frame" x="8" y="29" width="279" height="62"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <nil key="textColor"/>
@@ -492,36 +521,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cm-hg-vM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-425.7042253521127"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7T-IR-Rzp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="svg2pdf.htm-3" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="containerView" destination="o7T-IR-Rzp" id="HNZ-P0-BUZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1020" y="1045.7746478873239"/>
+            <point key="canvasLocation" x="875.625" y="-317.95774647887322"/>
         </scene>
     </scenes>
     <resources>
@@ -531,7 +531,6 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
         <image name="map" width="300" height="300"/>
         <image name="news_world" width="299" height="299"/>
         <image name="svg2pdf.htm-2" width="30" height="30"/>
-        <image name="svg2pdf.htm-3" width="30" height="30"/>
         <image name="svg2pdf.htm-4" width="30" height="30"/>
     </resources>
 </document>

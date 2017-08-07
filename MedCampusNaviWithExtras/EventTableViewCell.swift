@@ -10,6 +10,7 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
     
+    //Outlets
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var eventdesc: UILabel!
@@ -22,7 +23,6 @@ class EventTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
         // Configure the view for the selected state
     }
     
