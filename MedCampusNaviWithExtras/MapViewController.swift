@@ -49,6 +49,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         //Keyboard fix
     }
     
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
