@@ -28,7 +28,6 @@ class NewsViewController: UITableViewController {
             
             for dict in resultArray {
                 if (dict["url"] as? String) != nil {
-                    print("NIL")
                     self.url = dict["url"] as! String
                 }else{
                     self.url = "www.noSite.com"
@@ -75,6 +74,7 @@ class NewsViewController: UITableViewController {
         let news = self.news[indexPath.row]
         
         cell.selectionStyle=UITableViewCellSelectionStyle.none
+        cell.accessoryType=UITableViewCellAccessoryType.none
         cell.isUserInteractionEnabled=false
         cell.title.text=news.title
         cell.desc.text=news.desc

@@ -17,7 +17,6 @@ class EventTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let httpad = HTTP()
-        print("Start of .get")
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
                 let resultArray = getJson["results"] as! Array<[String:Any]>
                 for dict in resultArray {
@@ -57,15 +56,16 @@ class EventTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "eventCell"
-        print("Cell init")
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
             fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
         // Configure the cell...
         let event = self.events[indexPath.row]
+        cell.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
         if event.state == false {
             cell.selectionStyle=UITableViewCellSelectionStyle.none
             cell.isUserInteractionEnabled=false
+            cell.accessoryType=UITableViewCellAccessoryType.none
         }
         cell.time.text=event.getTimeString()
         cell.title.text=event.title
@@ -75,8 +75,8 @@ class EventTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("lappen")
         UIApplication.shared.open(events[indexPath.row].url, options: [:])
+        tableView.deselectRow(at: indexPath, animated: false)
     }
     
     /*
