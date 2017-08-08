@@ -19,6 +19,10 @@
 		355B5EF11F2615EC007D536E /* JSInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF01F2615EC007D536E /* JSInterface.swift */; };
 		355B5EF31F263177007D536E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EF21F263177007D536E /* Event.swift */; };
 		35A0F74A1F38730E00FD417D /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F7491F38730E00FD417D /* NavigationTableViewController.swift */; };
+		35A0F7551F399FAE00FD417D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0F7541F399FAE00FD417D /* CoreBluetooth.framework */; };
+		35A0F7571F399FC200FD417D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0F7561F399FC200FD417D /* JavaScriptCore.framework */; };
+		35A0F7591F399FD900FD417D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0F7581F399FD900FD417D /* UIKit.framework */; };
+		35A0F75B1F399FE900FD417D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0F75A1F399FE900FD417D /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		35A4E5881F320B6300A9329D /* ImpressumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4E5871F320B6300A9329D /* ImpressumViewController.swift */; };
 		35A4E58A1F32FEF000A9329D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4E5891F32FEF000A9329D /* Util.swift */; };
 		35D6BDE41F3078420040DE91 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDE31F3078420040DE91 /* NewsViewController.swift */; };
@@ -53,7 +57,6 @@
 		355B5EC71F260ABE007D536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		355B5EC91F260ABE007D536E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355B5ECC1F260ABE007D536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		355B5ECE1F260ABE007D536E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355B5ED31F260ABE007D536E /* MedCampusNaviWithExtrasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedCampusNaviWithExtrasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		355B5ED71F260ABE007D536E /* MedCampusNaviWithExtrasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCampusNaviWithExtrasTests.swift; sourceTree = "<group>"; };
 		355B5ED91F260ABE007D536E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +66,11 @@
 		355B5EF01F2615EC007D536E /* JSInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSInterface.swift; sourceTree = "<group>"; };
 		355B5EF21F263177007D536E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		35A0F7491F38730E00FD417D /* NavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
+		35A0F7541F399FAE00FD417D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		35A0F7561F399FC200FD417D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		35A0F7581F399FD900FD417D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35A0F75A1F399FE900FD417D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35A0F75C1F39A62800FD417D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35A4E5871F320B6300A9329D /* ImpressumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressumViewController.swift; sourceTree = "<group>"; };
 		35A4E5891F32FEF000A9329D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		35D6BDE31F3078420040DE91 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A0F75B1F399FE900FD417D /* Foundation.framework in Frameworks */,
+				35A0F7591F399FD900FD417D /* UIKit.framework in Frameworks */,
+				35A0F7571F399FC200FD417D /* JavaScriptCore.framework in Frameworks */,
+				35A0F7551F399FAE00FD417D /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +155,7 @@
 				355B5ED61F260ABE007D536E /* MedCampusNaviWithExtrasTests */,
 				355B5EE11F260ABE007D536E /* MedCampusNaviWithExtrasUITests */,
 				355B5EBE1F260ABE007D536E /* Products */,
+				35A0F7531F399FAD00FD417D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,13 +172,13 @@
 		355B5EBF1F260ABE007D536E /* MedCampusNaviWithExtras */ = {
 			isa = PBXGroup;
 			children = (
+				35A0F75C1F39A62800FD417D /* Info.plist */,
 				352E257A1F2F26EE004DE14E /* Storyboards */,
 				352E25781F2F1E82004DE14E /* ViewController */,
 				352E25771F2F1E64004DE14E /* Models */,
 				352E25791F2F1E9E004DE14E /* Util */,
 				355B5EC91F260ABE007D536E /* Assets.xcassets */,
 				355B5EC01F260ABE007D536E /* AppDelegate.swift */,
-				355B5ECE1F260ABE007D536E /* Info.plist */,
 			);
 			path = MedCampusNaviWithExtras;
 			sourceTree = "<group>";
@@ -194,6 +207,17 @@
 				35A0F7491F38730E00FD417D /* NavigationTableViewController.swift */,
 			);
 			name = Nav;
+			sourceTree = "<group>";
+		};
+		35A0F7531F399FAD00FD417D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35A0F75A1F399FE900FD417D /* Foundation.framework */,
+				35A0F7581F399FD900FD417D /* UIKit.framework */,
+				35A0F7561F399FC200FD417D /* JavaScriptCore.framework */,
+				35A0F7541F399FAE00FD417D /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		35A4E58B1F3309C700A9329D /* AboutUs */ = {
@@ -531,12 +555,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = A4T23767YU;
 				INFOPLIST_FILE = MedCampusNaviWithExtras/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = meduni.MedCampusNaviWithExtras;
+				PRODUCT_BUNDLE_IDENTIFIER = at.medunigraz.MedCampusNaviWithExtras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -545,12 +572,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A4T23767YU;
 				INFOPLIST_FILE = MedCampusNaviWithExtras/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = meduni.MedCampusNaviWithExtras;
+				PRODUCT_BUNDLE_IDENTIFIER = at.medunigraz.MedCampusNaviWithExtras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
