@@ -28,6 +28,11 @@ class EventTableViewController: UITableViewController {
                     //Disable Selection and Indicator if there is no URL
                     if (dict["url"] as? String) != "" {
                         self.url = dict["url"] as! String
+                        if self.url.substring(from: self.url.index(self.url.startIndex,offsetBy:4)) != "http"{
+                            let httpStr="http://"
+                            self.url = httpStr.appending(self.url)
+                            
+                        }
                         self.state=true
                     }else{
                         //Creating an Dummy URL
