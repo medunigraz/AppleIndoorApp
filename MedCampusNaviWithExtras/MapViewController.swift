@@ -30,14 +30,10 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         centralManager = CBCentralManager(delegate: self,queue: nil)
         
         //Webview
-        
         containerView.delegate = self
         let url = URL(string: "https://map.medunigraz.at/")
         let req = URLRequest(url: url!)
-        
-        DispatchQueue.main.async() {
-            self.containerView.loadRequest(req)
-        }
+        self.containerView.loadRequest(req)
  
         //JSContext Definition
         let ctx = containerView.value(forKeyPath: "documentView.webView.mainFrame.javaScriptContext") as! JSContext

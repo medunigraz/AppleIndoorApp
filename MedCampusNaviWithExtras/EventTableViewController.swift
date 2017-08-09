@@ -92,6 +92,7 @@ class EventTableViewController: UITableViewController {
         // Configure the cell...
         let event = self.events[indexPath.row]
         cell.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
+        
         //if no valid URL exists selection/interaction/selector Btn are disabled
         if event.state == false {
             cell.selectionStyle=UITableViewCellSelectionStyle.none
@@ -103,6 +104,7 @@ class EventTableViewController: UITableViewController {
             cell.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
   
         }
+        
         //Setting the cell attributes
         cell.time.text=event.getTimeString()
         if event.getTimeString() == "00.00.0000-00.00.0000" {
