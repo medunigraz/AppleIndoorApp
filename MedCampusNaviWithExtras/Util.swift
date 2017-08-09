@@ -9,6 +9,7 @@
 import Foundation
 //Util Class
 class Util{
+    let GLOBAL_URL = "https://api.medunigraz.at/v1/typo3/"
     //Converts Dates from Api
     func convertDate(date: String) ->String {
         let index: Range<String.Index> = date.range(of: "T")!

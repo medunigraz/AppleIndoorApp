@@ -9,6 +9,7 @@
 import UIKit
 
 class EventTableViewController: UITableViewController {
+    let urlString:String=Util().GLOBAL_URL.appending("events/?format=json")
     
     //Variables for adding cells to the table view
     var events = [Event]()
@@ -20,7 +21,7 @@ class EventTableViewController: UITableViewController {
         //HTTPAdapter init
         let httpad = HTTP()
         //Get Request for the data
-        httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
+        httpad.get(urlStr:urlString){ getJson in
             if (getJson["error"] as? Int) == nil {
                 //Getting the event Data as an Array of dictionaries
                 let resultArray = getJson["results"] as! Array<[String:Any]>
@@ -118,5 +119,7 @@ class EventTableViewController: UITableViewController {
         UIApplication.shared.open(events[indexPath.row].url!)
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+
     
 }

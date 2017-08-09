@@ -26,7 +26,7 @@
                             <tableViewSection headerTitle="Apps" id="I1b-lt-KBK" userLabel="Apps">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1hm-By-Xgh">
-                                        <rect key="frame" x="0.0" y="107" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="106.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hm-By-Xgh" id="hYb-WH-Lk4">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -50,7 +50,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="5fd-Zy-dtw">
-                                        <rect key="frame" x="0.0" y="151" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="150.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5fd-Zy-dtw" id="VGR-s9-XIW">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -74,7 +74,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Tpw-R9-V4W">
-                                        <rect key="frame" x="0.0" y="195" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tpw-R9-V4W" id="Px4-16-uEf">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -102,7 +102,7 @@
                             <tableViewSection headerTitle="About Us" id="YSi-8L-eW5">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="t3t-gV-Jrp">
-                                        <rect key="frame" x="0.0" y="295" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="294.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t3t-gV-Jrp" id="uhs-vU-HNN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -123,7 +123,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <connections>
-                                            <segue destination="ssi-9Z-LFr" kind="show" id="Tue-Nf-GIz"/>
+                                            <segue destination="ssi-9Z-LFr" kind="show" id="GZ1-Re-2bF"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -269,11 +269,11 @@ Die technische Betreuung der App erfolgt durch die OE Informationstechnologie de
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">
+                                        <string key="content">
 Sämtliche Texte auf der App der Medizinischen Universität Graz wurden sorgfältig geprüft. Dessen ungeachtet kann keine Garantie für die Richtigkeit, Vollständigkeit und Aktualität der Angaben bzw. Inhalte, weder selbst formulierte noch zitierte, noch für allfällige Schäden, die aus der Verwendung der Informationen resultieren könnten, übernommen werden. Eine Haftung der Medizinischen Universität Graz wird daher ausgeschlossen.
 Die Medizinische Universität Graz behält es sich vor, die Inhalte Ihrer Webseite jederzeit zu ändern, zu ergänzen, ganz oder teilweise zu löschen. Für allenfalls daraus resultierende Konsequenzen übernimmt die Medizinische Universität Graz keinerlei Verantwortung.
 Die Links zu externen Webseiten wurden sorgfältig ausgewählt. Da die Medizinische Universität Graz keinerlei Kontrolle über und auch keinen Einfluss auf die Inhalte dieser externen Webseiten hat, übernimmt die Medizinische Universität Graz für den Inhalt von solchen verlinkten Webseiten sowie für deren Aktualität, Richtigkeit, Vollständigkeit sowie Gesetzeskonformität keine Verantwortung.
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -354,7 +354,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYS-rf-nJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="1127"/>
+            <point key="canvasLocation" x="-84" y="1125"/>
         </scene>
         <!--Map-->
         <scene sceneID="yka-JG-nDR">
@@ -393,7 +393,6 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cpO-ID-Mnc">
                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>

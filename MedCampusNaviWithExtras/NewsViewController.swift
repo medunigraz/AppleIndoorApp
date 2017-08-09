@@ -14,13 +14,13 @@ class NewsViewController: UITableViewController {
     var news = [News]()
     var nextURL = String()
     var url = String()
-    
+    let urlString:String=Util().GLOBAL_URL.appending("news/?format=json")
     override func viewDidLoad() {
         super.viewDidLoad()
         //HTTPAdapter init
         let httpad = HTTP()
         //Get Request for the data
-        httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/news/?format=json"){ getJson in
+        httpad.get(urlStr:urlString){ getJson in
             if (getJson["error"] as? Int) == nil {
                 //Getting the event Data as an Array of dictionaries
                 let resultArray = getJson["results"] as! Array<[String:Any]>

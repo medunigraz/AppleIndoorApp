@@ -69,10 +69,10 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
             msg = "Sie haben keine Berechtigung diese App zu verwenden."
         //Happens if an unknown Error happens --> mostly broken Bluetooth
         case .unknown:
-            msg = "!!!Unkown Error!!!"
+            msg = "Fehler beim Aktivieren des Bluetooth Adapters"
         //Happens if Bluetooth is resetting
         case .resetting:
-            msg = "!!!Unknown Error!!!"
+            msg = "Fehler beim Aktivieren des Bluetooth Adapters"
         case .poweredOn: break
         }
         //Executed if an Error occured
