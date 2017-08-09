@@ -33,7 +33,6 @@ class EventTableViewController: UITableViewController {
                         if  !self.url.hasPrefix("http://"){
                             let httpStr="http://"
                             self.url = httpStr.appending(self.url)
-                            print(self.url)
                         }
                         self.state=true
                     }else{
