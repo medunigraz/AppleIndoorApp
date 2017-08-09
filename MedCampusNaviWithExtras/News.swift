@@ -12,12 +12,12 @@ class News {
     //MARK: Properties
     var title: String
     var desc: String
-    var url: URL
+    var url: URL?
     var date: String
     
     //MARK: Initialization
     
-    init(title: String, desc: String, url: URL, date: String) {
+    init(title: String, desc: String, url: URL?, date: String) {
         self.title=title
         self.desc=desc
         self.url=url

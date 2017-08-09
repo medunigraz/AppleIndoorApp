@@ -15,7 +15,8 @@ class HTTP{
     func get(urlStr:String,completionHandler: @escaping (_ result: [String:Any]) -> Void) {
         let task = URLSession.shared.dataTask(with: URL(string: urlStr)!){ (data, response, error) in
             if error != nil {
-                
+                print(error!.localizedDescription)
+                completionHandler(["error":1,"desc":error!.localizedDescription])
             }else{
                 let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
                 completionHandler(json!)
@@ -24,3 +25,4 @@ class HTTP{
         task.resume()
     }
 }
+

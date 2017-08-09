@@ -21,29 +21,42 @@ class NewsViewController: UITableViewController {
         let httpad = HTTP()
         //Get Request for the data
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/news/?format=json"){ getJson in
-            //Getting the event Data as an Array of dictionaries
-            let resultArray = getJson["results"] as! Array<[String:Any]>
-            //Getting the URL for the next site
-            //"END" --> no next site
-            if (getJson["next"] as? String) != nil {
-                self.nextURL = getJson["next"] as! String
+            if (getJson["error"] as? Int) == nil {
+                //Getting the event Data as an Array of dictionaries
+                let resultArray = getJson["results"] as! Array<[String:Any]>
+                //Getting the URL for the next site
+                //"END" --> no next site
+                if (getJson["next"] as? String) != nil {
+                    self.nextURL = getJson["next"] as! String
+                }else{
+                    self.nextURL = "END"
+                }
+                //Loop for processing the data
+                for dict in resultArray {
+                    //Disable Selection and Indicator if there is no URL
+                    if (dict["url"] as? String) != nil {
+                        self.url = dict["url"] as! String
+                    }else{
+                        //Creating an Dummy URL
+                        self.url = ""
+                    }
+                
+                    var urlObj:URL?
+                    if self.url == ""{
+                        urlObj = nil
+                    }else{
+                        urlObj=URL(string: self.url)
+                    }
+
+                    //Init of Model
+                    let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: urlObj ,date: dict["datetime"] as! String)
+                    //add the Model to the table View
+                    self.news += [newsObject]
+ 
+                }
             }else{
                 self.nextURL = "END"
-            }
-            //Loop for processing the data
-            for dict in resultArray {
-                //Disable Selection and Indicator if there is no URL
-                if (dict["url"] as? String) != nil {
-                    self.url = dict["url"] as! String
-                }else{
-                    //Creating an Dummy URL
-                    self.url = "www.foo.com"
-                }
-                //Init of Model
-                let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: self.url)!,date: dict["datetime"] as! String)
-                //add the Model to the table View
-                self.news += [newsObject]
- 
+                self.news += [News(title: "ERROR", desc: getJson["desc"] as! String, url: nil,date: "00.00.0000T0000")]
             }
             self.tableView.reloadData()
         }
@@ -92,6 +105,10 @@ class NewsViewController: UITableViewController {
         cell.title.text=news.title
         cell.desc.text=news.desc
         cell.date.text=news.date
+        if news.date == "00.00.0000" {
+            cell.date.isHidden=true
+        }
+        
         
         //Returning the Cell to the View
         return cell
@@ -108,6 +125,7 @@ class NewsViewController: UITableViewController {
                 let httpad = HTTP()
                 //HTTP get
                 httpad.get(urlStr:self.nextURL){ getJson in
+                    if (getJson["error"] as? Int) == nil {
                     let resultArray = getJson["results"] as! Array<[String:Any]>
                     //Getting the URL for the next site
                     //"END" --> no next site
@@ -131,6 +149,7 @@ class NewsViewController: UITableViewController {
                         self.news += [newsObject]
                     }
                     self.tableView.reloadData()
+                    }
                     
                 }
                 
@@ -140,7 +159,7 @@ class NewsViewController: UITableViewController {
     
     //Happens if the user touches a cell with a valid cell with an URL
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UIApplication.shared.open(news[indexPath.row].url, options: [:])
+        UIApplication.shared.open(news[indexPath.row].url!, options: [:])
     }
 
     

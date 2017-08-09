@@ -21,6 +21,7 @@ class EventTableViewController: UITableViewController {
         let httpad = HTTP()
         //Get Request for the data
         httpad.get(urlStr:"https://api.medunigraz.at/v1/typo3/events/?format=json"){ getJson in
+            if (getJson["error"] as? Int) == nil {
                 //Getting the event Data as an Array of dictionaries
                 let resultArray = getJson["results"] as! Array<[String:Any]>
                 //Loop for processing the data
@@ -31,20 +32,30 @@ class EventTableViewController: UITableViewController {
                         if self.url.characters.first != "h"{
                             let httpStr="http://"
                             self.url = httpStr.appending(self.url)
-                            
                         }
                         self.state=true
                     }else{
-                        //Creating an Dummy URL
-                        self.url = "www.foo.com"
+                        self.url = ""
                         self.state = false
                     }
                     //Init of Model
-                    let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: URL(string: self.url)!,state: self.state)
+                    var urlObj:URL?
+                    
+                    if self.url == ""{
+                        urlObj = nil
+                    }else{
+                        urlObj=URL(string: self.url)
+                    }
+                    
+                    let eventObject = Event(start:dict["start"] as! String, end:dict["end"] as! String, title:dict["title"]as! String, desc:dict["teaser"]as! String, allday: (dict["allday"] != nil),url: urlObj,state: self.state)
+                    
                     //add the Model to the table View
                     self.events += [eventObject]
                 }
-                self.tableView.reloadData()
+            }else{
+              self.events += [Event(start: "00.00.0000T0000", end:"00.00.0000T0000", title:"Error", desc:getJson["desc"] as! String, allday: false,url: nil,state: false)]  
+            }
+            self.tableView.reloadData()
         }
     }
     
@@ -92,6 +103,9 @@ class EventTableViewController: UITableViewController {
         }
         //Setting the cell attributes
         cell.time.text=event.getTimeString()
+        if event.getTimeString() == "00.00.0000-00.00.0000" {
+            cell.time.isHidden=true
+        }
         cell.title.text=event.title
         cell.eventdesc.text=event.description
         
@@ -101,7 +115,7 @@ class EventTableViewController: UITableViewController {
     
     //Happens if the user touches a cell with a valid cell with an URL
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UIApplication.shared.open(events[indexPath.row].url)
+        UIApplication.shared.open(events[indexPath.row].url!)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

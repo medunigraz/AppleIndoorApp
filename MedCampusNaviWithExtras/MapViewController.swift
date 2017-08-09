@@ -34,19 +34,17 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         containerView.delegate = self
         let url = URL(string: "https://map.medunigraz.at/")
         let req = URLRequest(url: url!)
-        containerView.loadRequest(req)
-    
- 
         
-        //
+        DispatchQueue.main.async() {
+            self.containerView.loadRequest(req)
+        }
+ 
         //JSContext Definition
         let ctx = containerView.value(forKeyPath: "documentView.webView.mainFrame.javaScriptContext") as! JSContext
         
         //Init JSInterface
         JSInterface = cJSInterface(centralMgr: centralManager)
         ctx.setObject(JSInterface, forKeyedSubscript: "JSInterface" as NSCopying & NSObjectProtocol)
-        
-        //Keyboard fix
     }
     
 
