@@ -12,7 +12,6 @@
 		355B5EC11F260ABE007D536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EC01F260ABE007D536E /* AppDelegate.swift */; };
 		355B5EC51F260ABE007D536E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EC41F260ABE007D536E /* MapViewController.swift */; };
 		355B5EC81F260ABE007D536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B5EC61F260ABE007D536E /* Main.storyboard */; };
-		355B5ECA1F260ABE007D536E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355B5EC91F260ABE007D536E /* Assets.xcassets */; };
 		355B5ECD1F260ABE007D536E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B5ECB1F260ABE007D536E /* LaunchScreen.storyboard */; };
 		355B5ED81F260ABE007D536E /* MedCampusNaviWithExtrasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5ED71F260ABE007D536E /* MedCampusNaviWithExtrasTests.swift */; };
 		355B5EE31F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B5EE21F260ABE007D536E /* MedCampusNaviWithExtrasUITests.swift */; };
@@ -29,6 +28,7 @@
 		35D6BDEB1F30AE890040DE91 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */; };
 		35D6BDED1F30B33F0040DE91 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */; };
 		35D6BDEF1F31A0020040DE91 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6BDEE1F31A0020040DE91 /* HTTP.swift */; };
+		35F5760A1F3AE69100E3421F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355B5EC91F260ABE007D536E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,15 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		352E25771F2F1E64004DE14E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				352E25751F2F1D6E004DE14E /* News.swift */,
-				355B5EF21F263177007D536E /* Event.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		352E25781F2F1E82004DE14E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,12 +163,11 @@
 		355B5EBF1F260ABE007D536E /* MedCampusNaviWithExtras */ = {
 			isa = PBXGroup;
 			children = (
-				35A0F75C1F39A62800FD417D /* Info.plist */,
 				352E257A1F2F26EE004DE14E /* Storyboards */,
 				352E25781F2F1E82004DE14E /* ViewController */,
-				352E25771F2F1E64004DE14E /* Models */,
 				352E25791F2F1E9E004DE14E /* Util */,
 				355B5EC91F260ABE007D536E /* Assets.xcassets */,
+				35A0F75C1F39A62800FD417D /* Info.plist */,
 				355B5EC01F260ABE007D536E /* AppDelegate.swift */,
 			);
 			path = MedCampusNaviWithExtras;
@@ -231,6 +221,7 @@
 		35D6BDE51F30A91B0040DE91 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				352E25751F2F1D6E004DE14E /* News.swift */,
 				352E25731F2F1B1B004DE14E /* NewsTableViewCell.swift */,
 				35D6BDE31F3078420040DE91 /* NewsViewController.swift */,
 			);
@@ -241,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				35D6BDEA1F30AE890040DE91 /* EventTableViewCell.swift */,
+				355B5EF21F263177007D536E /* Event.swift */,
 				35D6BDEC1F30B33F0040DE91 /* EventTableViewController.swift */,
 			);
 			name = Event;
@@ -364,8 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F5760A1F3AE69100E3421F /* Assets.xcassets in Resources */,
 				355B5ECD1F260ABE007D536E /* LaunchScreen.storyboard in Resources */,
-				355B5ECA1F260ABE007D536E /* Assets.xcassets in Resources */,
 				355B5EC81F260ABE007D536E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

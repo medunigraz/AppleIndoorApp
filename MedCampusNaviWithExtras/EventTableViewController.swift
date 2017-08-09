@@ -28,7 +28,7 @@ class EventTableViewController: UITableViewController {
                     //Disable Selection and Indicator if there is no URL
                     if (dict["url"] as? String) != "" {
                         self.url = dict["url"] as! String
-                        if self.url.substring(from: self.url.index(self.url.startIndex,offsetBy:4)) != "http"{
+                        if self.url.characters.first != "h"{
                             let httpStr="http://"
                             self.url = httpStr.appending(self.url)
                             
@@ -84,6 +84,11 @@ class EventTableViewController: UITableViewController {
             cell.selectionStyle=UITableViewCellSelectionStyle.none
             cell.isUserInteractionEnabled=false
             cell.accessoryType=UITableViewCellAccessoryType.none
+        }else{
+            cell.selectionStyle=UITableViewCellSelectionStyle.blue
+            cell.isUserInteractionEnabled=true
+            cell.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
+  
         }
         //Setting the cell attributes
         cell.time.text=event.getTimeString()
@@ -96,8 +101,8 @@ class EventTableViewController: UITableViewController {
     
     //Happens if the user touches a cell with a valid cell with an URL
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UIApplication.shared.open(events[indexPath.row].url, options: [:])
-        tableView.deselectRow(at: indexPath, animated: false)
+        UIApplication.shared.open(events[indexPath.row].url)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
