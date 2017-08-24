@@ -24,6 +24,8 @@ import JavaScriptCore
     //CBCentralManager
     var centralManager:CBCentralManager!
     
+    var isScanning = false
+    
     //Init
     init(centralMgr: CBCentralManager){
         centralManager=centralMgr
@@ -31,19 +33,33 @@ import JavaScriptCore
     //Functions for javascript
     func stopscan() {
         centralManager.stopScan()
+        isScanning = false
     }
     
     func startscan() {
         centralManager.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey : true]);
+        isScanning = true
     }
     
     func checkdevice() -> Int {
+        
+        //print("checkdevice - We hate apple")
+        
+        var res = 0
         switch centralManager.state{
         case .poweredOn:
-            return 0
+            res = 0
         default:
-            return 1
+            res = 1
         }
+        
+        if(isScanning)
+        {
+            centralManager.stopScan()
+            centralManager.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey : true]);
+        }
+        
+        return res;
     }
     
     
