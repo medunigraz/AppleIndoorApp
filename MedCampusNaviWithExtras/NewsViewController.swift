@@ -34,8 +34,13 @@ class NewsViewController: UITableViewController {
                 //Loop for processing the data
                 for dict in resultArray {
                     //Disable Selection and Indicator if there is no URL
-                    if (dict["url"] as? String) != nil {
-                        self.url = dict["url"] as! String
+                    if let str = dict["url"] as? String {
+                    //if (dict["url"] as? String) != nil {
+                        self.url = str
+                        if  !self.url.hasPrefix("http://") && !self.url.hasPrefix("https://"){
+                            let httpStr="http://"
+                            self.url = httpStr.appending(self.url)
+                        }
                     }else{
                         //Creating an Dummy URL
                         self.url = ""
@@ -96,10 +101,23 @@ class NewsViewController: UITableViewController {
         }
         // Configure the cell...
         let news = self.news[indexPath.row]
+        
         //Disabled, because no URLs are available at this time 07.08.2017
         cell.selectionStyle=UITableViewCellSelectionStyle.none
         cell.accessoryType=UITableViewCellAccessoryType.none
         cell.isUserInteractionEnabled=false
+        
+        //if no valid URL exists selection/interaction/selector Btn are disabled
+        if news.url != nil {
+            cell.selectionStyle=UITableViewCellSelectionStyle.blue
+            cell.isUserInteractionEnabled=true
+            cell.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
+            
+        }else{
+            cell.selectionStyle=UITableViewCellSelectionStyle.none
+            cell.isUserInteractionEnabled=false
+            cell.accessoryType=UITableViewCellAccessoryType.none
+        }
         
         //Setting the cell attributes
         cell.title.text=news.title
@@ -137,14 +155,36 @@ class NewsViewController: UITableViewController {
                     //Loop for processing the data
                     for dict in resultArray {
                         //Disable Selection and Indicator if there is no URL
-                        if (dict["url"] as? String) != nil {
-                            self.url = dict["url"] as! String
+                        //if (dict["url"] as? String) != nil {
+                        //    self.url = dict["url"] as! String
+                        //}else{
+                        //    //Creating an Dummy URL
+                        //    self.url = "www.foo.com"
+                        //}
+                        
+                        if let str = dict["url"] as? String {
+                            //if (dict["url"] as? String) != nil {
+                            self.url = str
+                            if  !self.url.hasPrefix("http://") && !self.url.hasPrefix("https://"){
+                                let httpStr="http://"
+                                self.url = httpStr.appending(self.url)
+                            }
                         }else{
                             //Creating an Dummy URL
-                            self.url = "www.foo.com"
+                            self.url = ""
                         }
+                        
+                        var urlObj:URL?
+                        if self.url == ""{
+                            urlObj = nil
+                        }else{
+                            urlObj=URL(string: self.url)
+                        }
+                        
+                        
+                        
                         //Init of Model
-                        let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: URL(string: "https://api.medunigraz.at/")!, date: dict["datetime"] as! String)
+                        let newsObject = News(title: dict["title"] as! String, desc: dict["teaser"] as! String, url: urlObj, date: dict["datetime"] as! String)
                         //Add model to View
                         self.news += [newsObject]
                     }
@@ -159,7 +199,8 @@ class NewsViewController: UITableViewController {
     
     //Happens if the user touches a cell with a valid cell with an URL
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UIApplication.shared.open(news[indexPath.row].url!, options: [:])
+        UIApplication.shared.open(news[indexPath.row].url!)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     

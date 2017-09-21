@@ -42,7 +42,6 @@ import JavaScriptCore
     }
     
     func checkdevice() -> Int {
-        
         //print("checkdevice - We hate apple")
         
         var res = 0

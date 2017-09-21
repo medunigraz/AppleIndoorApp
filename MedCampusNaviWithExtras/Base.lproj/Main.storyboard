@@ -12,7 +12,7 @@
         <!--MedCampus-->
         <scene sceneID="EVH-CZ-gqh">
             <objects>
-                <tableViewController id="fEJ-X2-vow" customClass="NavigationTableViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fEJ-X2-vow" customClass="NavigationTableViewController" customModule="Med_Uni_Graz_MSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Ca-VC-Qn1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--Impressum-->
         <scene sceneID="7PB-8o-Udp">
             <objects>
-                <viewController title="Impressum" id="ssi-9Z-LFr" customClass="ImpressumViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Impressum" id="ssi-9Z-LFr" customClass="ImpressumViewController" customModule="Med_Uni_Graz_MSC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dyf-6N-QCS"/>
                         <viewControllerLayoutGuide type="bottom" id="lCv-JG-Lao"/>
@@ -181,7 +181,7 @@ Cg
 Medizinische Universität Graz
 Auenbruggerplatz 2
 8036 Graz
-rektor(at)medunigraz.at
+rektor@medunigraz.at
 www.medunigraz.at
 Rechtsform und Information
 Juristische Person öffentlichen Rechts gemäß § 4 Universitätsgesetz 2002 (UG 2002), BGBl. I Nr. 120/2002 idgF.
@@ -238,7 +238,7 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-Die technische Betreuung der App erfolgt durch die OE Informationstechnologie der Medizinischen Universität Graz. In Problemfällen sowie bei Anfragen bzw. Anregungen technischer Art richten Sie Ihre e-Mail an it-serviceline(at)medunigraz.at.
+Die technische Betreuung der App erfolgt durch die OE Informationstechnologie der Medizinischen Universität Graz. In Problemfällen sowie bei Anfragen bzw. Anregungen technischer Art richten Sie Ihre e-Mail an it-serviceline@medunigraz.at.
 </string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="14"/>
@@ -269,11 +269,11 @@ Die technische Betreuung der App erfolgt durch die OE Informationstechnologie de
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
+                                        <mutableString key="content">
 Sämtliche Texte auf der App der Medizinischen Universität Graz wurden sorgfältig geprüft. Dessen ungeachtet kann keine Garantie für die Richtigkeit, Vollständigkeit und Aktualität der Angaben bzw. Inhalte, weder selbst formulierte noch zitierte, noch für allfällige Schäden, die aus der Verwendung der Informationen resultieren könnten, übernommen werden. Eine Haftung der Medizinischen Universität Graz wird daher ausgeschlossen.
-Die Medizinische Universität Graz behält es sich vor, die Inhalte Ihrer Webseite jederzeit zu ändern, zu ergänzen, ganz oder teilweise zu löschen. Für allenfalls daraus resultierende Konsequenzen übernimmt die Medizinische Universität Graz keinerlei Verantwortung.
+Die Medizinische Universität Graz behält es sich vor, die Inhalte jederzeit zu ändern, zu ergänzen, ganz oder teilweise zu löschen. Für allenfalls daraus resultierende Konsequenzen übernimmt die Medizinische Universität Graz keinerlei Verantwortung.
 Die Links zu externen Webseiten wurden sorgfältig ausgewählt. Da die Medizinische Universität Graz keinerlei Kontrolle über und auch keinen Einfluss auf die Inhalte dieser externen Webseiten hat, übernimmt die Medizinische Universität Graz für den Inhalt von solchen verlinkten Webseiten sowie für deren Aktualität, Richtigkeit, Vollständigkeit sowie Gesetzeskonformität keine Verantwortung.
-</string>
+</mutableString>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -288,57 +288,7 @@ Die Links zu externen Webseiten wurden sorgfältig ausgewählt. Da die Medizinis
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-Bundesministerium für Wissenschaft, Forschung und Wirtschaft (bmwfw)
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Offenlegung gemäß § 25 Mediengesetz, BGBl. I Nr. 214/1981 idgF.">
-                                        <attributes>
-                                            <color key="NSColor" red="0.44134190678596497" green="0.7043871283531189" blue="0.11924209445714951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="ArialMT"/>
-                                            <font key="NSOriginalFont" size="24" name="ArialMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Medieninhaberin">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Medizinische Universität Graz, Auenbruggerplatz 2, A-8036 Graz
-Unternehmensgegenstand: gemäß Aufgabendefinition in § 3 UG 2002
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Grundlegende Richtung">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                            <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dient einerseits der Information der Öffentlichkeit über Belange der Medizinischen Universität Graz in den Bereichen Forschung und Lehre und Patientenversorgung, andererseits Mitteilungen der Medizinischen Universität Graz zu Fragen der Organisation und Verwaltung.</string>
+Bundesministerium für Wissenschaft, Forschung und Wirtschaft (bmwfw)</string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -359,7 +309,7 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
         <!--Map-->
         <scene sceneID="yka-JG-nDR">
             <objects>
-                <viewController title="Map" id="iei-wf-xpY" customClass="SecondViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="iei-wf-xpY" customClass="SecondViewController" customModule="Med_Uni_Graz_MSC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5xi-wv-fxG"/>
                         <viewControllerLayoutGuide type="bottom" id="2qf-7b-tat"/>
@@ -409,17 +359,17 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
         <!--News-->
         <scene sceneID="s4h-yE-HAE">
             <objects>
-                <tableViewController title="News" id="6JY-IF-XLW" customClass="NewsViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="News" id="6JY-IF-XLW" customClass="NewsViewController" customModule="Med_Uni_Graz_MSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="VZl-Qh-Vmg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.50660914182662964" green="0.74309366941452026" blue="0.15571674704551697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="130" id="Tyd-Ye-Qxv" customClass="NewsTableViewCell" customModule="MedCampusNaviWithExtras" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="130" id="Tyd-Ye-Qxv" customClass="NewsTableViewCell" customModule="Med_Uni_Graz_MSC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tyd-Ye-Qxv" id="EwA-rV-4U4" customClass="NewsTableViewCell" customModule="MedCampusNaviWithExtras" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tyd-Ye-Qxv" id="EwA-rV-4U4" customClass="NewsTableViewCell" customModule="Med_Uni_Graz_MSC" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -471,14 +421,14 @@ Der Webauftritt der Medizinischen Universität Graz unter www.medunigraz.at dien
         <!--Events-->
         <scene sceneID="hD6-0f-YL0">
             <objects>
-                <tableViewController title="Events" id="xeq-Yz-3Dc" customClass="EventTableViewController" customModule="MedCampusNaviWithExtras" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Events" id="xeq-Yz-3Dc" customClass="EventTableViewController" customModule="Med_Uni_Graz_MSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="c2d-ac-uBu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.50660914180000005" green="0.74309366939999999" blue="0.15571674699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="eventCell" focusStyle="custom" rowHeight="95" id="MF9-bd-BUX" customClass="EventTableViewCell" customModule="MedCampusNaviWithExtras" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="eventCell" focusStyle="custom" rowHeight="95" id="MF9-bd-BUX" customClass="EventTableViewCell" customModule="Med_Uni_Graz_MSC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MF9-bd-BUX" id="Pne-y7-XwP">

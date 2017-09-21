@@ -31,10 +31,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
         
         //Webview
         containerView.delegate = self
-        //let url = URL(string: "https://map.medunigraz.at/")
-        let url = URL(string: "https://map.medunigraz.at/map-dev/")
-        //let url = URL(string: "https://openlayers.org/en/latest/examples/")
-        
+        let url = URL(string: "https://map.medunigraz.at/")
         let req = URLRequest(url: url!)
         self.containerView.loadRequest(req)
  
@@ -92,15 +89,11 @@ class SecondViewController: UIViewController, UIWebViewDelegate, CBPeripheralDel
             let localName:String=advertisementData[CBAdvertisementDataLocalNameKey] as! String
             //Kontakt --> standart BTLE Name for Kontakt.io Beacons
             if localName == "Kontakt" {
-                
-                
                 //get of ServiceData to get the Beacon Name
                 let serviceData:NSDictionary = advertisementData[CBAdvertisementDataServiceDataKey]! as! NSDictionary
                 let data:NSData=serviceData.allValues.first! as! NSData
                 let dataString=String(data: data as Data,encoding:.utf8)!
                 let beaconName=dataString.substring(to:dataString.index(dataString.startIndex,offsetBy:4))
-                
-                //print("\(beaconName)#\(RSSI)")
                 
                 //Json for the Javascript Method
                 let jsonObject:String="[{\"Type\":\"BT\",\"ID\":\"00:00:00:00:00:00\",\"Value\":\(RSSI),\"Name\":\"\(beaconName)\",\"Batterie\":0}]"

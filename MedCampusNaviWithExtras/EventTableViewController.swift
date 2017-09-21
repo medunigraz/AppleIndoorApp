@@ -28,9 +28,12 @@ class EventTableViewController: UITableViewController {
                 //Loop for processing the data
                 for dict in resultArray {
                     //Disable Selection and Indicator if there is no URL
-                    if (dict["url"] as? String) != "" {
-                        self.url=dict["url"] as! String
-                        if  !self.url.hasPrefix("http://"){
+                    //) && ((dict["url"] as? String) != ""
+                    if let str = dict["url"] as? String
+                    {
+                        //self.url=dict["url"] as! String
+                        self.url=str
+                        if  !self.url.hasPrefix("http://") && !self.url.hasPrefix("https://"){
                             let httpStr="http://"
                             self.url = httpStr.appending(self.url)
                         }

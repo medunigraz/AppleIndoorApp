@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		352E25731F2F1B1B004DE14E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		352E25751F2F1D6E004DE14E /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		355B5EBD1F260ABE007D536E /* MedCampusNaviWithExtras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedCampusNaviWithExtras.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		355B5EBD1F260ABE007D536E /* Med Uni Graz MSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Med Uni Graz MSC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		355B5EC01F260ABE007D536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355B5EC41F260ABE007D536E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		355B5EC71F260ABE007D536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		355B5EBE1F260ABE007D536E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				355B5EBD1F260ABE007D536E /* MedCampusNaviWithExtras.app */,
+				355B5EBD1F260ABE007D536E /* Med Uni Graz MSC.app */,
 				355B5ED31F260ABE007D536E /* MedCampusNaviWithExtrasTests.xctest */,
 				355B5EDE1F260ABE007D536E /* MedCampusNaviWithExtrasUITests.xctest */,
 			);
@@ -263,7 +263,7 @@
 			);
 			name = MedCampusNaviWithExtras;
 			productName = MedCampusNaviWithExtras;
-			productReference = 355B5EBD1F260ABE007D536E /* MedCampusNaviWithExtras.app */;
+			productReference = 355B5EBD1F260ABE007D536E /* Med Uni Graz MSC.app */;
 			productType = "com.apple.product-type.application";
 		};
 		355B5ED21F260ABE007D536E /* MedCampusNaviWithExtrasTests */ = {
@@ -314,7 +314,6 @@
 				TargetAttributes = {
 					355B5EBC1F260ABE007D536E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A4T23767YU;
 						ProvisioningStyle = Automatic;
 					};
 					355B5ED21F260ABE007D536E = {
@@ -553,8 +552,8 @@
 				INFOPLIST_FILE = MedCampusNaviWithExtras/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = at.medunigraz.MedCampusNaviWithExtras;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = at.medunigraz.MedUniGrazMSC;
+				PRODUCT_NAME = "Med Uni Graz MSC";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,8 +569,8 @@
 				INFOPLIST_FILE = MedCampusNaviWithExtras/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = at.medunigraz.MedCampusNaviWithExtras;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = at.medunigraz.MedUniGrazMSC;
+				PRODUCT_NAME = "Med Uni Graz MSC";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

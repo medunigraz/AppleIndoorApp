@@ -20,7 +20,11 @@ class News {
     init(title: String, desc: String, url: URL?, date: String) {
         self.title=title
         self.desc=desc
-        self.url=url
+        if url != nil {
+            self.url=url
+            //print("Create News: " + (self.url?.absoluteString)!)
+        }
+        
         self.date=Util().convertDate(date: date)
     }
     
