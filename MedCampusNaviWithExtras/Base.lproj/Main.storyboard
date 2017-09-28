@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medcampus-logo-transparent" id="Fdv-Zn-9bq">
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meduniheader" id="Fdv-Zn-9bq">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
@@ -269,11 +269,11 @@ Die technische Betreuung der App erfolgt durch die OE Informationstechnologie de
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">
+                                        <string key="content">
 Sämtliche Texte auf der App der Medizinischen Universität Graz wurden sorgfältig geprüft. Dessen ungeachtet kann keine Garantie für die Richtigkeit, Vollständigkeit und Aktualität der Angaben bzw. Inhalte, weder selbst formulierte noch zitierte, noch für allfällige Schäden, die aus der Verwendung der Informationen resultieren könnten, übernommen werden. Eine Haftung der Medizinischen Universität Graz wird daher ausgeschlossen.
 Die Medizinische Universität Graz behält es sich vor, die Inhalte jederzeit zu ändern, zu ergänzen, ganz oder teilweise zu löschen. Für allenfalls daraus resultierende Konsequenzen übernimmt die Medizinische Universität Graz keinerlei Verantwortung.
 Die Links zu externen Webseiten wurden sorgfältig ausgewählt. Da die Medizinische Universität Graz keinerlei Kontrolle über und auch keinen Einfluss auf die Inhalte dieser externen Webseiten hat, übernimmt die Medizinische Universität Graz für den Inhalt von solchen verlinkten Webseiten sowie für deren Aktualität, Richtigkeit, Vollständigkeit sowie Gesetzeskonformität keine Verantwortung.
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -481,7 +481,7 @@ Bundesministerium für Wissenschaft, Forschung und Wirtschaft (bmwfw)</string>
         <image name="calendar" width="600" height="600"/>
         <image name="impressum" width="600" height="600"/>
         <image name="map" width="600" height="600"/>
-        <image name="medcampus-logo-transparent" width="272" height="49"/>
+        <image name="meduniheader" width="2720" height="490"/>
         <image name="news_world" width="600" height="600"/>
         <image name="svg2pdf.htm-2" width="30" height="30"/>
         <image name="svg2pdf.htm-4" width="30" height="30"/>
